@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Турист-рго — Исполнить мечты просто!</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        
+        <img src="media\Снимок экрана 2025-12-09 164913.png" alt="Турист-рго — логотип" />
+      </a>
+
+      <nav class="main-nav" aria-label="Главное меню">
+        <ul>
+          <li><a href="#offers">Акции</a></li>
+          <li><a href="#search-form">Поиск</a></li>
+          <li><a href="#booking">Управление бронированием</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a class="btn btn-primary" href="#search-form">Найти поход</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / заголовок -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Турист-рго</h1>
+          <p class="lead">Исполнить мечты просто — удобные, комфортные и безопасные походы любой сложности.</p>
+          <p>Выберите даты, укажите участников и уровень подготовки — мы организуем всё.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#search-form">Начать поиск</a>
+            <a class="btn btn-ghost" href="#about">О компании</a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <!-- замените на подходящее изображение из медиа -->
+          <img src="media\46424.jpg" alt="Группа туристов в горах" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Инфографика: Шаги бронирования -->
+    <section id="steps" class="steps container">
+      <h2>Как оформить поход — 4 простых шага</h2>
+      <div class="steps-line" aria-hidden="true"></div>
+      <ol class="steps-list" role="list">
+        <li class="step">
+          <div class="step-icon">1</div>
+          <h3>Выбор дат</h3>
+          <p>Укажите желаемые даты похода.</p>
+        </li>
+        <li class="step">
+          <div class="step-icon">2</div>
+          <h3>Количество и уровень</h3>
+          <p>Сколько человек и какой у них уровень подготовки.</p>
+        </li>
+        <li class="step">
+          <div class="step-icon">3</div>
+          <h3>Выбор региона и зон</h3>
+          <p>Выберите регион и обязательные к посещению зоны.</p>
+        </li>
+        <li class="step">
+          <div class="step-icon">4</div>
+          <h3>Бронирование</h3>
+          <p>Оформите заказ и дополнительные услуги.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- О компании -->
+    <section id="about" class="about container">
+      <h2>О компании</h2>
+      <div class="about-grid">
+        <div>
+          <h3>Цель</h3>
+          <p>Сделать любой поход удобным, комфортным и безопасным, учитывая пожелания клиентов.</p>
+          <h3>Девиз</h3>
+          <p>«Исполнить мечты просто!»</p>
+        </div>
+        <div>
+          <h3>Отзывы клиентов</h3>
+          <blockquote class="review">
+            «Спасибо Турист-рго — профессиональная команда, отличный маршрут и внимательный гид.»
+            <cite>— Марина, 42 года</cite>
+          </blockquote>
+          <blockquote class="review">
+            «Организация на высоте, взяли всё с нас — только наслаждались природой.»
+            <cite>— Алексей, 36 лет</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Форма поиска (ключевая) -->
+    <section id="search-form" class="search container">
+      <h2>Поиск маршрутов</h2>
+      <form action="search.html" method="get" class="search-form" aria-label="Форма поиска маршрутов">
+        <div class="form-row">
+          <label for="region">Регион</label>
+          <select id="region" name="region" required>
+            <option value="">Выберите регион</option>
+            <option>Карелия</option>
+            <option>Алтай</option>
+            <option>Краснодарский край</option>
+            <option>Кавказ</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="dates">Предполагаемые даты похода</label>
+          <input id="dates" name="dates" type="text" placeholder="напр., 2026-06-01 — 2026-06-07" required />
+          <small class="muted">Можно ввести диапазон дат или отдельную дату.</small>
+        </div>
+
+        <div class="form-row two-cols">
+          <div>
+            <label for="people">Количество участников</label>
+            <input id="people" name="people" type="number" min="1" value="2" required />
+          </div>
+          <div>
+            <label for="level">Уровень подготовки</label>
+            <select id="level" name="level" required>
+              <option value="">Выберите уровень</option>
+              <option>Начальный</option>
+              <option>Средний</option>
+              <option>Продвинутый</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row form-actions">
+          <button class="btn btn-primary" type="submit" aria-label="Поиск маршрутов">Поиск</button>
+          <a class="btn btn-ghost" href="search.html">Показать все</a>
+        </div>
+      </form>
+    </section>
+
+    <!-- Акции -->
+    <section id="offers" class="offers container">
+      <h2>Акции</h2>
+      <div class="offers-grid">
+        <!-- Пример карточки акции — замените media/promo*.jpg на реальные файлы -->
+        <article class="offer-card">
+          <img src="media\a1ac90e311e04029f8cf7cd0eb70a143f9782cdc.jpg" alt="Акция: Скидка на Алтай" />
+          <div class="offer-body">
+            <h3>Скидка на походы в Алтай</h3>
+            <p>Сезонная скидка 15% при бронировании до конца месяца.</p>
+           <a class="btn btn-secondary" href="promo.html">Подробнее</a>
+
+          </div>
+        </article>
+
+        <article class="offer-card">
+          <img src="media\e50e6deed0714242b13071f9a47016c4.max-1200x800.jpg" alt="Акция: Скидка на фотоуслуги" />
+          <div class="offer-body">
+            <h3>Фото+видео в подарок</h3>
+            <p>При бронировании группы от 6 человек — услуги фотографа в подарок.</p>
+           <a class="btn btn-secondary" href="promo.html">Подробнее</a>
+
+          </div>
+        </article>
+
+        <article class="offer-card">
+          <img src="media\_DSC5265.JPG" alt="Акция: Скидка на аренду" />
+          <div class="offer-body">
+            <h3>Аренда с выгодой</h3>
+            <p>Скидки на аренду снаряжения — до 20% для постоянных клиентов.</p>
+            <a class="btn btn-secondary" href="promo.html">Подробнее</a>
+
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Подписка -->
+    <section class="subscribe container">
+      <h2>Подпишитесь на закрытые акции</h2>
+      <form class="subscribe-form" action="#" method="post" aria-label="Форма подписки">
+        <label for="email" class="visually-hidden">Email</label>
+        <input id="email" name="email" type="email" placeholder="Ваш e-mail" required />
+        <button class="btn btn-primary" type="submit">Подписаться</button>
+      </form>
+    </section>
+
+    <!-- Промежуточный блок — CTA на бронирование -->
+    <section id="booking" class="cta container">
+      <h2>Готовы в путь?</h2>
+      <p>Выберите маршрут и зоны — мы поможем с остальным.</p>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="seat.html">Выбрать зоны</a>
+        <a class="btn btn-ghost" href="booking.html">Оформить бронирование</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Контакты</h3>
+        <p>Телефон: <a href="tel:88005553310">8 (800) 555-33-10</a></p>
+      </div>
+
+      <div>
+        <h3>Навигация</h3>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="search.html">Поиск маршрутов</a></li>
+          <li><a href="seat.html">Выбор зон</a></li>
+          <li><a href="booking.html">Бронирование</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Полезные ссылки</h3>
+        <!-- в задании были примеры ссылок — добавил указанные адреса -->
+        <ul>
+          <li><a href="http://xx000cx-ml.wsr.ru/return">Возврат</a></li>
+          <li><a href="http://xxxxxx-ml.wsr.ru/feedback">Обратная связь</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© Турист-рго — Исполнить мечты просто!</p>
+    </div>
+  </footer>
+
+  <!-- Небольшой скрипт для UX: пример подсказки для поля дат (без зависимости на внешние библиотеки) -->
+  <script>
+    // простая подсказка: если пользователь фокусируется на поле дат — вставляем пример
+    (function(){
+      const dates = document.getElementById('dates');
+      if (!dates) return;
+      dates.addEventListener('focus', function(){
+        if (!this.value) this.placeholder = 'например: 2026-07-01 — 2026-07-07';
+      });
+      dates.addEventListener('blur', function(){
+        this.placeholder = 'напр., 2026-06-01 — 2026-06-07';
+      });
+    })();
+  </script>
+</body>
+</html>

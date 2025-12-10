@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Выбор зон маршрута — Турист-рго</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ШАПКА -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">
+      <img src="media\Снимок экрана 2025-12-09 164913.png" alt="Турист-рго">
+    </a>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html#offers">Акции</a></li>
+        <li><a href="search.html">Поиск</a></li>
+        <li><a href="booking.html">Управление бронированием</a></li>
+      </ul>
+    </nav>
+
+    <a class="btn btn-primary" href="search.html">К маршрутам</a>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- ЗАГОЛОВОК -->
+  <section>
+    <h1>Выбор зон маршрута</h1>
+    <p class="muted">
+      Выберите зоны, которые будут включены в обязательное посещение во время похода
+    </p>
+  </section>
+
+  <!-- СХЕМА МАРШРУТА -->
+  <section class="about">
+    <h2>Схема маршрута</h2>
+    <img
+      src="media\photo_2025-12-09_17-01-47.jpg"
+      alt="Схема маршрута с зонами"
+      style="width:100%; max-width:800px; border-radius:14px; box-shadow:0 6px 18px rgba(0,0,0,.08);"
+    >
+  </section>
+
+  <!-- ВЫБОР ЗОН -->
+  <section class="offers">
+    <h2>Доступные зоны маршрута</h2>
+
+    <form action="booking.html" method="get">
+      <div class="offers-grid">
+
+        <!-- ЗОНА 1 -->
+        <article class="offer-card">
+          <img src="media\IMG_9370.jpg" alt="Горное озеро">
+          <div class="offer-body">
+            <h3>Горное озеро</h3>
+            <p>Живописное озеро с кристально чистой водой. Отличное место для отдыха.</p>
+            <label>
+              <input type="checkbox" name="zone[]" value="lake">
+              Включить в маршрут
+            </label>
+          </div>
+        </article>
+
+        <!-- ЗОНА 2 -->
+        <article class="offer-card">
+          <img src="media\7ae64a5d2c72079a43698a2285a1f1ff.jpg" alt="Горный перевал">
+          <div class="offer-body">
+            <h3>Горный перевал</h3>
+            <p>Высотная точка маршрута с панорамным видом на хребты.</p>
+            <label>
+              <input type="checkbox" name="zone[]" value="pass">
+              Включить в маршрут
+            </label>
+          </div>
+        </article>
+
+        <!-- ЗОНА 3 -->
+        <article class="offer-card">
+          <img src="media\d7a57556b49b62c4e4c62a7807ec285a.jpg" alt="Водопад">
+          <div class="offer-body">
+            <h3>Водопад</h3>
+            <p>Мощный природный водопад, одна из главных достопримечательностей маршрута.</p>
+            <label>
+              <input type="checkbox" name="zone[]" value="waterfall">
+              Включить в маршрут
+            </label>
+          </div>
+        </article>
+
+        <!-- ЗОНА 4 -->
+        <article class="offer-card">
+          <img src="media\rongbuk valley  mt.jpg" alt="Лагерь">
+          <div class="offer-body">
+            <h3>Базовый лагерь</h3>
+            <p>Ночёвка в оборудованной зоне с костром и местами для палаток.</p>
+            <label>
+              <input type="checkbox" name="zone[]" value="camp">
+              Включить в маршрут
+            </label>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- КНОПКА ПЕРЕХОДА -->
+      <div style="margin-top:32px; text-align:center">
+        <button type="submit" class="btn btn-primary">
+          Перейти к бронированию
+        </button>
+      </div>
+    </form>
+
+  </section>
+
+</main>
+
+<!-- ПОДВАЛ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+
+    <div>
+      <h3>Контакты</h3>
+      <p>Телефон: <a href="tel:88005553310">8 (800) 555-33-10</a></p>
+    </div>
+
+    <div>
+      <h3>Навигация</h3>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="search.html">Поиск маршрутов</a></li>
+        <li><a href="seat.html">Выбор зон</a></li>
+        <li><a href="booking.html">Бронирование</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Полезные ссылки</h3>
+      <ul>
+        <li><a href="http://xx000cx-ml.wsr.ru/return">Возврат</a></li>
+        <li><a href="http://xxxxxx-ml.wsr.ru/feedback">Обратная связь</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© Турист-рго — Исполнить мечты просто!</p>
+  </div>
+</footer>
+
+</body>
+</html>
